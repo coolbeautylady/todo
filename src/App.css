@@ -1,52 +1,109 @@
-.header{
+/* 전체 페이지 배경 */
+body {
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+  background-color: #F4F6F8;
+  color: #333;
+}
+
+/* 헤더 스타일 */
+.header {
   height: 200px;
   width: 100%;
-  background-color : #E9EEF6;
+  background-color: #3F51B5;
   padding-top: 50px;
-}
-
-.card-container{
-  height: 300px;
-  width: 300px;
-  box-shadow: 0px 3px 50px #A5A5A5;
-}
-
-.card-wrapper{
-  width: 270px; 
-  height: 200px; 
-  box-shadow: 0px 3px 50px #A5A5A5;
+  color: white;
+  text-align: center;
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-.card-top{
-  width: 100%;
-  height: 2%;
+.header h3 {
+  margin: 0;
+  font-size: 2em;
 }
 
-.task-holder{
+.header button {
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: #ff9800;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  font-size: 1em;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.header button:hover {
+  background-color: #e68900;
+}
+
+/* 카드 컨테이너 스타일 */
+.card-container {
+  height: 300px;
+  width: 300px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  overflow: hidden;
+  background-color: white;
+  margin: 20px;
+}
+
+/* 카드 래퍼 스타일 */
+.card-wrapper {
+  width: 270px;
+  height: 200px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  border-radius: 10px;
+  overflow: hidden;
+  background-color: white;
+  margin: 20px;
+}
+
+/* 카드 상단 스타일 */
+.card-top {
   width: 100%;
-  height: 98%;
-  padding: 10px 10px;
-  display : flex;
+  height: 5px;
+}
+
+/* 작업 홀더 스타일 */
+.task-holder {
+  width: 100%;
+  height: calc(100% - 5px);
+  padding: 20px;
+  display: flex;
   flex-direction: column;
   position: relative;
+  box-sizing: border-box;
 }
 
-.card-header{
+/* 카드 헤더 스타일 */
+.card-header {
   margin-top: 10px;
   margin-bottom: 10px;
-  max-width: 80px;
+  max-width: 100%;
   height: 30px;
-  padding: 1px 1px !important;
+  padding: 5px;
   text-align: center;
+  font-weight: bold;
+  color: #3F51B5;
+  background-color: #E3F2FD;
+  border-radius: 5px;
 }
 
-.task-container{
-  height: 600px;
+/* 작업 컨테이너 스타일 */
+.task-container {
   width: 100%;
   display: flex;
   flex-wrap: wrap;
-  background-color: #F6F7F8;
-  padding : 40px 100px;
+  background-color: #F4F6F8;
+  padding: 40px 100px;
+  justify-content: center;
+  box-sizing: border-box;
 }
